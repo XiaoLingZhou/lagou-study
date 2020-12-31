@@ -1,27 +1,17 @@
-server:
-  port: 8082
-
 spring:
   application:
     name: lagou-service-email
-
-#注册到Eureka服务中心
-eureka:
-  client:
-    service-url:
-      # 注册到集群
-      defaultZone: http://LagouCloudEurekaServerA:8761/eureka,http://LagouCloudEurekaServerB:8762/eureka
-  instance:
-    prefer-ip-address: true  #服务实例中显示ip，而不是显示主机名（兼容老的eureka版本）
-    # 实例名称： 192.168.1.103:lagou-service-resume:8080，我们可以自定义它
-    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:@project.version@
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloud?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 6982420
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl  #避免将驼峰命名转换为下划线命名
 email:
   from: zhouzhetian@163.com
   host: smtp.163.com
