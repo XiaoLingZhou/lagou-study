@@ -3,7 +3,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/springcloud?useSSL=false&serverTimezone=UTC
     username: root
-    password: 698242
+    password: 6982420
   jpa:
     database: MySQL
     show-sql: true
@@ -12,4 +12,4 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl  #避免将驼峰命名转换为下划线命名
 email:
   from: zhouzhetian@163.com
-  host: smtp.163.com
+  host: smtp.163.com66
