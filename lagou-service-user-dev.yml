@@ -16,5 +16,4 @@ email:
   
 limiter:
  rate: 1
- capacity: 60
- tokens: 60
+ capacity: 1
