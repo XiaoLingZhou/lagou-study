@@ -15,5 +15,5 @@ email:
   host: smtp.163.com
   
 limiter:
- replenishRate: 1
- burstCapacity: 3
+ rate: 1
+ capacity: 3
