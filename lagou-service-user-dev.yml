@@ -15,5 +15,7 @@ email:
   host: smtp.163.com
   
 limiter:
- rate: 1
  capacity: 1
+ minutes: 2
+ refillTokens: 1
+ 
