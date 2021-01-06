@@ -13,3 +13,7 @@ spring:
 email:
   from: zhouzhetian@163.com
   host: smtp.163.com
+  
+limiter：
+ replenishRate: 1
+ burstCapacity: 3
