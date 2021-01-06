@@ -15,5 +15,5 @@ email:
   host: smtp.163.com
   
 limiter:
- rate: 1/20
+ rate: 1
  capacity: 2
