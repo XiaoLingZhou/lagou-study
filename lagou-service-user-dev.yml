@@ -16,4 +16,4 @@ email:
   
 limiter:
  rate: 1
- capacity: 3
+ capacity: 2
